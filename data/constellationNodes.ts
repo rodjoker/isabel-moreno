@@ -1,0 +1,83 @@
+import { ConstellationNode } from "@/lib/types";
+
+export const constellationNodes: ConstellationNode[] = [
+  {
+    id: 1,
+    title: "Kinesiología & T.R.E",
+    category: "Cuerpo Somático & Raíz",
+    desc: "Testaje neuromuscular para ubicar el origen del bloqueo biológico y liberación de programas del subconsciente.",
+    link: "#individuales",
+    position: [-18, 8, 10],
+    size: 1.8,
+  },
+  {
+    id: 2,
+    title: "Sanación con Arquetipos",
+    category: "Campo Áurico & Transpersonal",
+    desc: "Desactivación de máscaras y armonización vibracional con Cristales Litios, Gemoterapia y Reiki Usui.",
+    link: "#individuales",
+    position: [16, 12, -8],
+    size: 1.7,
+  },
+  {
+    id: 3,
+    title: "Visión Aural & Lectura Sutil",
+    category: "Clarividencia Sensitiva",
+    desc: "Canalización de encrucijadas vitales apoyada en Terapia Tensérgica y Técnicas de Alta Conciencia (TAC).",
+    link: "#individuales",
+    position: [-8, -12, 14],
+    size: 1.6,
+  },
+  {
+    id: 4,
+    title: "Estudio Numerológico",
+    category: "Mapa Cuántico de Identidad",
+    desc: "Desglose de tu misión álmica, frecuencia de nacimiento y ciclos evolutivos (Método Sebastián Santa Cruz).",
+    link: "#individuales",
+    position: [20, -6, 12],
+    size: 1.9,
+  },
+  {
+    id: 5,
+    title: "Onda Encantada Maya",
+    category: "Sincronía Galáctica Tzolkin",
+    desc: "Lectura del Kin galáctico, oráculo del destino y propósito en la rueda del tiempo cósmico.",
+    link: "#individuales",
+    position: [2, 18, -12],
+    size: 1.7,
+  },
+  {
+    id: 6,
+    title: "Hipnosis Reparadora & Vidas Pasadas",
+    category: "Memoria del Alma",
+    desc: "Acceso a memorias profundas de vidas pasadas e infancia para reparar el origen del trauma primario.",
+    link: "#individuales",
+    position: [-14, -8, -16],
+    size: 1.6,
+  },
+  {
+    id: 7,
+    title: "El Método Nóstos",
+    category: "Circuito Integral de 3 Dimensiones",
+    desc: "Transformación profunda sostenida secuencialmente por los 3 profesionales (Cuerpo + Mente + Coaching).",
+    link: "#metodo-nostos",
+    position: [0, 0, 0],
+    size: 2.5,
+  },
+];
+
+// Pares de índices (0-based, sobre constellationNodes) que se conectan con líneas.
+export const constellationConnections: [number, number][] = [
+  [0, 6],
+  [1, 6],
+  [2, 6],
+  [3, 6],
+  [4, 6],
+  [5, 6],
+  [0, 2],
+  [2, 3],
+  [3, 1],
+  [1, 4],
+  [4, 5],
+  [5, 0],
+];
