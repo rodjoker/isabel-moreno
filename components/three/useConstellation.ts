@@ -9,6 +9,68 @@ import {
 } from "@/data/constellationNodes";
 import type { ConstellationNode } from "@/lib/types";
 
+// Sprite con forma de estrella de 4 puntas (destello): convierte los puntos
+// planos de Three.js (cuadrados por defecto) en un brillo tipo "sparkle" real,
+// con núcleo central y dos haces cruzados que se desvanecen hacia las puntas.
+// Se genera una sola vez y se comparte entre montajes; textura minúscula, no
+// hace falta liberarla.
+let starSpriteTexture: THREE.Texture | null = null;
+
+function drawStarSpike(
+  ctx: CanvasRenderingContext2D,
+  size: number,
+  axis: "horizontal" | "vertical"
+) {
+  ctx.save();
+  ctx.translate(size / 2, size / 2);
+  ctx.scale(axis === "horizontal" ? 1 : 0.09, axis === "horizontal" ? 0.09 : 1);
+
+  const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, size / 2);
+  gradient.addColorStop(0, "rgba(255, 255, 255, 0.95)");
+  gradient.addColorStop(0.15, "rgba(255, 250, 230, 0.6)");
+  gradient.addColorStop(1, "rgba(232, 202, 101, 0)");
+
+  ctx.fillStyle = gradient;
+  ctx.beginPath();
+  ctx.arc(0, 0, size / 2, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
+function getStarSpriteTexture(): THREE.Texture {
+  if (starSpriteTexture) return starSpriteTexture;
+
+  const size = 128;
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d")!;
+
+  ctx.globalCompositeOperation = "lighter";
+
+  drawStarSpike(ctx, size, "horizontal");
+  drawStarSpike(ctx, size, "vertical");
+
+  // Núcleo brillante central
+  const core = ctx.createRadialGradient(
+    size / 2,
+    size / 2,
+    0,
+    size / 2,
+    size / 2,
+    size * 0.18
+  );
+  core.addColorStop(0, "rgba(255, 255, 255, 1)");
+  core.addColorStop(1, "rgba(255, 255, 255, 0)");
+  ctx.fillStyle = core;
+  ctx.beginPath();
+  ctx.arc(size / 2, size / 2, size * 0.18, 0, Math.PI * 2);
+  ctx.fill();
+
+  starSpriteTexture = new THREE.CanvasTexture(canvas);
+  return starSpriteTexture;
+}
+
 export function useConstellation() {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -60,24 +122,46 @@ export function useConstellation() {
     goldPointLight.position.set(0, 20, 20);
     scene.add(goldPointLight);
 
-    // Polvo cósmico de fondo
-    const dustCount = 700;
-    const dustPos = new Float32Array(dustCount * 3);
-    for (let i = 0; i < dustCount * 3; i += 3) {
-      dustPos[i] = (Math.random() - 0.5) * 180;
-      dustPos[i + 1] = (Math.random() - 0.5) * 140;
-      dustPos[i + 2] = (Math.random() - 0.5) * 180;
-    }
-    const dustGeometry = new THREE.BufferGeometry();
-    dustGeometry.setAttribute("position", new THREE.BufferAttribute(dustPos, 3));
-    const dustMaterial = new THREE.PointsMaterial({
-      color: 0xe8ca65,
-      size: 0.6,
-      transparent: true,
-      opacity: 0.5,
+    // Polvo cósmico de fondo: 3 capas con distinto tamaño/brillo para simular
+    // un campo de estrellas natural en vez de puntos uniformes.
+    const starSprite = getStarSpriteTexture();
+    const dustGroup = new THREE.Group();
+    scene.add(dustGroup);
+
+    const dustLayers = [
+      { count: 650, size: 0.9, opacity: 0.45 },
+      { count: 200, size: 1.4, opacity: 0.65 },
+      { count: 70, size: 2.1, opacity: 0.9 },
+    ];
+
+    const dustGeometries: THREE.BufferGeometry[] = [];
+    const dustMaterials: THREE.PointsMaterial[] = [];
+
+    dustLayers.forEach(({ count, size, opacity }) => {
+      const positions = new Float32Array(count * 3);
+      for (let i = 0; i < count * 3; i += 3) {
+        positions[i] = (Math.random() - 0.5) * 180;
+        positions[i + 1] = (Math.random() - 0.5) * 140;
+        positions[i + 2] = (Math.random() - 0.5) * 180;
+      }
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+      const material = new THREE.PointsMaterial({
+        color: 0xe8ca65,
+        size,
+        map: starSprite,
+        transparent: true,
+        opacity,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        sizeAttenuation: true,
+      });
+
+      dustGeometries.push(geometry);
+      dustMaterials.push(material);
+      dustGroup.add(new THREE.Points(geometry, material));
     });
-    const dustPoints = new THREE.Points(dustGeometry, dustMaterial);
-    scene.add(dustPoints);
 
     // Nodos de la constelación
     const starGroup = new THREE.Group();
@@ -166,7 +250,7 @@ export function useConstellation() {
       animationFrameId = requestAnimationFrame(animate);
 
       starGroup.rotation.y += 0.0008;
-      dustPoints.rotation.y -= 0.0003;
+      dustGroup.rotation.y -= 0.0003;
 
       raycaster.setFromCamera(mouse, camera);
       const intersects = raycaster.intersectObjects(starMeshes);
@@ -202,8 +286,8 @@ export function useConstellation() {
         (mesh.material as THREE.Material).dispose();
       });
 
-      dustGeometry.dispose();
-      dustMaterial.dispose();
+      dustGeometries.forEach((geo) => geo.dispose());
+      dustMaterials.forEach((mat) => mat.dispose());
 
       lineMat.dispose();
       lineGeometries.forEach((geo) => geo.dispose());
