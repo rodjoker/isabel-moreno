@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import { aboutInfo } from "@/data/aboutInfo";
@@ -58,6 +59,15 @@ export default function AboutSection() {
                 {aboutInfo.buttonLabel}
               </Button>
             </div>
+          </div>
+
+          <div className="about-photo-card">
+            <Image
+              src={aboutInfo.photo.src}
+              alt={aboutInfo.photo.alt}
+              fill
+              sizes="(max-width: 992px) 90vw, 320px"
+            />
           </div>
         </div>
       </div>

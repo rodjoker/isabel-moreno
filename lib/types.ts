@@ -57,6 +57,10 @@ export interface AboutInfo {
   role: string;
   shortBio: string;
   avatarIcon: string;
+  photo: {
+    src: string;
+    alt: string;
+  };
   cvBadges: CvBadge[];
   contentBadge: string;
   contentTitle: string;

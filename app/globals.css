@@ -706,7 +706,7 @@ a {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1.2fr 1fr;
   gap: 4rem;
   align-items: center;
 }
@@ -718,6 +718,19 @@ a {
   text-align: center;
   border: 1px solid var(--gold-border);
   box-shadow: 0 15px 35px rgba(0,0,0,0.03);
+}
+
+.about-photo-card {
+  position: relative;
+  aspect-ratio: 1000 / 2170;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.03);
+}
+
+.about-photo-card img {
+  object-fit: cover;
 }
 
 .about-avatar-placeholder {

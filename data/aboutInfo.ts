@@ -6,6 +6,10 @@ export const aboutInfo: AboutInfo = {
   shortBio:
     "Especialista en Desarrollo Transpersonal (EDT Madrid), Kinesiología Holística y Lectura Cuántica.",
   avatarIcon: "fa-solid fa-feather-pointed",
+  photo: {
+    src: "/images/isabel-moreno.jpg",
+    alt: "Isabel María Moreno Luis en su espacio terapéutico",
+  },
   cvBadges: [
     { label: "Transpersonal EDT" },
     { label: "K.E.P Donostia" },
