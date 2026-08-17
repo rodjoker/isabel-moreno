@@ -17,7 +17,7 @@ export const contactLinks: ContactLink[] = [
   },
   {
     icon: "fa-solid fa-location-dot",
-    label: "Donostia / San Sebastián (Presencial) & Online",
+    label: "Guipuzcoa (Presencial) & Online",
     href: "#",
     static: true,
   },

@@ -7,7 +7,6 @@ import NostosMethodSection from "@/components/sections/NostosMethodSection";
 import GroupSection from "@/components/sections/GroupSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
-import FaqSection from "@/components/sections/FaqSection";
 import CtaSection from "@/components/sections/CtaSection";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <GroupSection />
       <ServicesSection />
       <AboutSection />
-      <FaqSection />
       <CtaSection />
       <Footer />
     </>

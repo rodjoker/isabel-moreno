@@ -13,7 +13,7 @@ export default function ServicesSection() {
           subtitle={
             <>
               Terapias personalizadas de alta precisión clínica y cuántica.
-              Disponibles en formato <strong>presencial (Donostia)</strong> y{" "}
+              Disponibles en formato <strong>presencial (Guipuzcoa)</strong> y{" "}
               <strong>online (Zoom / Skype)</strong>.
             </>
           }

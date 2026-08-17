@@ -2,6 +2,7 @@ import Button from "@/components/ui/Button";
 import { Service } from "@/lib/types";
 
 export default function ServiceCard({
+  id,
   icon,
   title,
   description,
@@ -10,7 +11,7 @@ export default function ServiceCard({
   buttonHref,
 }: Service) {
   return (
-    <div className="service-card">
+    <div id={id} className="service-card">
       <div>
         <span className="service-icon">
           <i className={icon} />

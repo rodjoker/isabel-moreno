@@ -16,7 +16,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NÓSTOS | Isabel María Moreno Luis - Terapeuta Transpersonal & Holística",
+  title: "NÓSTOS | Isabel Moreno - Terapeuta Transpersonal & Holística",
   description:
     "Integración rigurosa de Kinesiología Holística y Emocional, T.R.E, Hipnosis Clínica, Arquetipos y Mapas Cuánticos para liberar bloqueos inconscientes y restaurar tu equilibrio bioenergético.",
 };

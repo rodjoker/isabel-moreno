@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <span className="section-badge">
-            Kinesiología Holística · Terapia Transpersonal · Sabiduría Cuántica
+            Kinesiologa · Terapeuta Holística · Sabiduría Ancestral
           </span>
           <h1 className="hero-title">
             El regreso a tu centro:
@@ -17,13 +17,11 @@ export default function Hero() {
             propósito.
           </h1>
           <p className="hero-desc">
-            Integración rigurosa de{" "}
+            Un espacio de terapia profunda{" "}
             <strong>
-              Kinesiología Holística y Emocional, T.R.E, Hipnosis Clínica,
-              Arquetipos y Mapas Cuánticos
+              y transformación para personas dispuestas a soltar el control,
             </strong>{" "}
-            para liberar bloqueos inconscientes y restaurar tu equilibrio
-            bioenergético.
+            vencer el miedo al cambio y recordar quiénes son en realidad.
           </p>
           <div className="hero-buttons">
             <Button

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
+import SectionHeader from "@/components/ui/SectionHeader";
 import { aboutInfo } from "@/data/aboutInfo";
 
 export default function AboutSection() {
   return (
     <section id="sobre-mi" className="about-section">
       <div className="container">
+        <SectionHeader badge={aboutInfo.contentBadge} title={aboutInfo.contentTitle} />
         <div className="about-grid">
           <div className="about-image-card">
             <div className="about-avatar-placeholder">
@@ -46,10 +48,6 @@ export default function AboutSection() {
           </div>
 
           <div className="about-content">
-            <span className="section-badge">{aboutInfo.contentBadge}</span>
-            <h2 style={{ fontSize: "2.8rem", lineHeight: 1.2 }}>
-              {aboutInfo.contentTitle}
-            </h2>
             <div className="about-quote">{aboutInfo.quote}</div>
             {aboutInfo.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>

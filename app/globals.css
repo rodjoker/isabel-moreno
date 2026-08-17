@@ -599,6 +599,7 @@ a {
 }
 
 .service-card {
+  scroll-margin-top: 110px;
   background: var(--bg-card);
   border-radius: var(--radius-card);
   padding: 3rem 2.8rem;
@@ -704,11 +705,19 @@ a {
   padding: 7rem 0;
 }
 
+.about-section .section-title {
+  margin-bottom: 3.5rem;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+
+.about-content p {
+  text-align: justify;
 }
 
 .about-image-card {

@@ -2,6 +2,7 @@ import { Service, ModalityItem } from "@/lib/types";
 
 export const services: Service[] = [
   {
+    id: "kinesiologia",
     icon: "fa-solid fa-hand-holding-heart",
     title: "Kinesiología & Terapia de Respuesta Espiritual (T.R.E)",
     description:
@@ -17,6 +18,7 @@ export const services: Service[] = [
     buttonHref: "#contacto",
   },
   {
+    id: "arquetipos",
     icon: "fa-solid fa-dharmachakra",
     title: "Sanación & Alineación con Arquetipos",
     description:
@@ -32,23 +34,24 @@ export const services: Service[] = [
     buttonHref: "#contacto",
   },
   {
-    icon: "fa-regular fa-eye",
-    title: "Clarividencia Sensitiva & Lectura Sutil",
-    description:
-      "Canalización e intuición aplicada sustentada en Terapia Tensérgica (Visión Aural) y Técnicas de Alta Conciencia (TAC) para discernir encrucijadas vitales inmediatas y liberar energía densa retenida.",
+    id: "art-coaching",
+    icon: "fa-solid fa-brain",
+    title: "Art-Coaching & Neurográfica",
+    description: "Método de dibujo terapéutico y transformacional.",
     sublist: {
-      title: "Aplicación Inmediata:",
+      title: "Algoritmos Neurográficos:",
       items: [
-        { icon: "fa-solid fa-check", label: "Lectura del campo áurico y vórtices energéticos." },
-        { icon: "fa-solid fa-check", label: "Claridad sobre decisiones de vida y vínculos kármicos." },
+        { icon: "fa-solid fa-check", label: "Procesar emociones negativas." },
+        { icon: "fa-solid fa-check", label: "Resolución de conflictos y reducción de la ansiedad y el estrés." },
       ],
     },
-    buttonLabel: "Solicitar Lectura Sutil",
+    buttonLabel: "Reservar Sesión de Art-Coaching",
     buttonHref: "#contacto",
   },
   {
+    id: "mapas-cuanticos",
     icon: "fa-solid fa-atom",
-    title: "Mapas Cuánticos de Identidad & Propósito",
+    title: "Estudio Numerológico, Calendario Maya & Regresiones",
     description:
       "Cartografía multidimensional para descifrar el pacto evolutivo de tu alma y sanar memorias pasadas:",
     sublist: {
@@ -57,7 +60,7 @@ export const services: Service[] = [
         {
           icon: "fa-solid fa-star",
           label:
-            "Estudio Numerológico Transpersonal: Análisis de misión, dones y números maestros (Método Sebastián Santa Cruz & Ana Adela Celani).",
+            "Estudio Numerológico: Análisis de misión, dones y números maestros.",
         },
         {
           icon: "fa-solid fa-moon",
@@ -71,7 +74,7 @@ export const services: Service[] = [
         },
       ],
     },
-    buttonLabel: "Crear Mi Mapa Cuántico",
+    buttonLabel: "Solicitar Estudio Numerologico",
     buttonHref: "#contacto",
   },
 ];
@@ -80,7 +83,7 @@ export const modalityItems: ModalityItem[] = [
   {
     icon: "fa-solid fa-location-dot",
     title: "Consulta Presencial",
-    description: "Espacio terapéutico en Donostia",
+    description: "Espacio terapéutico en Guipuzcoa",
   },
   {
     icon: "fa-solid fa-video",

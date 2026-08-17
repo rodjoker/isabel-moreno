@@ -34,6 +34,7 @@ export interface ServiceSublist {
 }
 
 export interface Service {
+  id: string;
   icon: string;
   title: string;
   description: string;
@@ -68,11 +69,6 @@ export interface AboutInfo {
   paragraphs: string[];
   buttonLabel: string;
   buttonHref: string;
-}
-
-export interface FaqEntry {
-  question: string;
-  answer: string;
 }
 
 export interface ConstellationNode {

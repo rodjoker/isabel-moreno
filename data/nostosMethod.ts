@@ -2,24 +2,24 @@ import { NostosPillar } from "@/lib/types";
 
 export const nostosPillars: NostosPillar[] = [
   {
-    step: "Fase 01 · Raíz & Biología",
-    title: "Cuerpo & T.R.E Transpersonal",
+    step: "Fase 01 · Raíces",
+    title: "Sanar el Pasado",
     description:
-      "Guiado por Isabel: Kinesiología holística, Terapia de Respuesta Espiritual, corrección bioenergética y liberación de improntas celulares.",
-    tag: "Somática & Energía",
+      "Desarmemos el caparazón y los patrones heredados de la infancia que te mantiene atrapado.",
+    tag: "Liberación de Bloqueos",
   },
   {
-    step: "Fase 02 · Inconsciente & Símbolo",
-    title: "Psicología & Psico-Tarot",
+    step: "Fase 02 · Presente",
+    title: "Habitar tu Poder",
     description:
-      "Descodificación de arquetipos, exploración de la sombra psicológica y desarticulación de lealtades y creencias familiares limitantes.",
-    tag: "Psique & Arquetipos",
+      "Activamos tu autenticidad para que dejes de esconder tu luz por miedo a incomodar o a ser juzgada.",
+    tag: "Empoderamiento y Realeza",
   },
   {
-    step: "Fase 03 · Manifiesto & Terrenal",
-    title: "D'Arte Coaching & Acción",
+    step: "Fase 03 · Futuro",
+    title: "Diseñar tu Propósito",
     description:
-      "Aterrizaje pragmático, arquitectura de hábitos conscientes y plan estratégico para anclar la nueva vibración en el plano material.",
-    tag: "Coaching & Acción Real",
+      "Trazamos un mapa claro hacia tus metas más ambiciosas, recordándote como confiar en la vida.",
+    tag: "Reconexión y Propósito",
   },
 ];

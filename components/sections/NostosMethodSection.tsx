@@ -15,7 +15,7 @@ export default function NostosMethodSection() {
                 El Método <span className="gold-accent">Nóstos</span>
               </>
             }
-            subtitle="Un circuito secuencial, cerrado y multidisciplinar sostenido por 3 profesionales (terapia transpersonal/energética con Isabel + psicología/tarot + coaching de acción)."
+            subtitle="A través del método Nóstos te ayudo a entender y a transformar lo que te pasa. Nóstos es un método de acompañamiento, guía y transformación para sostener a personas en momentos de crisis (laborales, personales, familiares...)."
           />
 
           <div className="nostos-grid">

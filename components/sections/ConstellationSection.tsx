@@ -19,7 +19,7 @@ export default function ConstellationSection() {
             <>
               La Constelación{" "}
               <span style={{ color: "var(--gold-light)" }}>
-                Cuántica del Ser
+                del Método Nóstos
               </span>
             </>
           }
@@ -27,8 +27,8 @@ export default function ConstellationSection() {
             <>
               Interactúa en 3D con el mapa arquetípico y energético. Arrastra
               para orbitar, haz zoom y{" "}
-              <strong>haz clic en cualquier estrella dorada</strong> para
-              revelar la dimensión que resuena con tu momento vital.
+              <strong>haz clic en cualquier esfera dorada</strong> para
+              revelar las herramientas con las que trabajo.
             </>
           }
         />

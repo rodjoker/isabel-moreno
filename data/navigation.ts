@@ -6,5 +6,4 @@ export const navLinks: NavLink[] = [
   { label: "Espacios Grupales", href: "#grupales" },
   { label: "Sesiones con Isabel", href: "#individuales" },
   { label: "Sobre Isabel", href: "#sobre-mi" },
-  { label: "Preguntas", href: "#faq" },
 ];
