@@ -6,12 +6,12 @@ export const services: Service[] = [
     icon: "fa-solid fa-hand-holding-heart",
     title: "Kinesiología & Terapia de Respuesta Espiritual (T.R.E)",
     description:
-      "Testaje muscular neuromuscular (Kinesiología Holística y Emocional Práctica K.E.P) para localizar el origen exacto del bloqueo físico o emocional. Aplicación de T.R.E para la limpieza de programas subconscientes y bloqueos del alma.",
+      "TESTAJE:",
     sublist: {
       title: "Herramientas de Corrección Somática:",
       items: [
-        { icon: "fa-solid fa-check", label: "Testaje holístico de órganos, meridianos y emociones." },
-        { icon: "fa-solid fa-check", label: "Apoyo con Flores de Bach, Aceites Esenciales y Auriculoterapia." },
+        { icon: "fa-solid fa-check", label: "Kinesiología Holística y Emocional (K.E.P): A través del testaje muscular, localizamos el origen exacto de tu bloqueo físico o emocional para ir directo a la raíz del problema." },
+        { icon: "fa-solid fa-check", label: "Terapia de Respuesta Espiritual (T.R.E): Una técnica profunda para limpiar los programas subconscientes y liberar los bloqueos del alma que te impiden avanzar." },
       ],
     },
     buttonLabel: "Reservar Sesión de Kinesiología",
@@ -20,14 +20,14 @@ export const services: Service[] = [
   {
     id: "arquetipos",
     icon: "fa-solid fa-dharmachakra",
-    title: "Sanación & Alineación con Arquetipos",
+    title: "Tratamiento con Arquetipos",
     description:
-      "Abordaje transpersonal para reprogramar lealtades inconscientes y restaurar el flujo vital mediante vibración sutil, Cristales Litios, Gemoterapia y Reiki Usui Shiki Ryoho.",
+      "Tratamiento para recuperar el equilibrio, ordenar la energía y volver a sentirte alineado.",
     sublist: {
       title: "Enfoque Energético Transpersonal:",
       items: [
-        { icon: "fa-solid fa-check", label: "Desactivación de máscaras psíquicas y patrones heredados." },
-        { icon: "fa-solid fa-check", label: "Armonización áurica con cristales de luz Litios y gemas." },
+        { icon: "fa-solid fa-check", label: "Alineamiento del campo energético." },
+        { icon: "fa-solid fa-check", label: "Armonización a través de arquetipos." },
       ],
     },
     buttonLabel: "Reservar Alineación",
@@ -37,7 +37,7 @@ export const services: Service[] = [
     id: "art-coaching",
     icon: "fa-solid fa-brain",
     title: "Art-Coaching & Neurográfica",
-    description: "Método de dibujo terapéutico y transformacional.",
+    description: "Un método creativo y visual para transformar lo que no puedes explicar con palabras, liberar tensiones y encontrar nuevas soluciones desde la calma.",
     sublist: {
       title: "Algoritmos Neurográficos:",
       items: [
@@ -60,17 +60,17 @@ export const services: Service[] = [
         {
           icon: "fa-solid fa-star",
           label:
-            "Estudio Numerológico: Análisis de misión, dones y números maestros.",
+            "Estudio Numerológico: Descubre tus talentos, comprende tus ciclos vitales y alínate con tu propósito a través de tu fecha y nombre.",
         },
         {
           icon: "fa-solid fa-moon",
           label:
-            "Onda Encantada / Calendario Maya: Lectura de Kin de nacimiento, sello galáctico y sincronía cósmica Tzolkin.",
+            "Onda Encantada / Calendario Maya: Aprende a fluir con los ritmos naturales y comprende tu energía para vivir con mayor armonía diaria.",
         },
         {
           icon: "fa-solid fa-infinity",
           label:
-            "Hipnosis Clínica Reparadora & Regresiones: Descenso transpersonal a memorias de vidas pasadas e infancia para reparación del trauma raíz.",
+            "Hipnosis Clínica Reparadora & Regresiones: Un viaje guiado para sanar el origen de bloqueos profundos y liberar cargas del pasado que te frenan hoy.",
         },
       ],
     },

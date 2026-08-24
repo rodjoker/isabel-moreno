@@ -4,7 +4,7 @@ export const aboutInfo: AboutInfo = {
   name: "Isabel Moreno",
   role: "Kinesióloga & Terapeuta Holística",
   shortBio:
-    "Especialista en Desarrollo Transpersonal (EDT Madrid), Kinesiología Holística.",
+    "Algunas de mis competencias:",
   avatarIcon: "fa-solid fa-feather-pointed",
   photo: {
     src: "/images/isabel-moreno.jpeg",
@@ -23,12 +23,12 @@ export const aboutInfo: AboutInfo = {
   quote:
     "«El síntoma no es un error que corregir, sino el mapa celular que te conduce de regreso a tu verdadera naturaleza.»",
   paragraphs: [
-    "  Hola, mi nombre es Isabel ",
-    " Soy terapeuta y mentora de desarrollo personal. Mi propósito de vida es ayudarte a derribar las estructuras rígidas y los miedos obsoletos que te impiden brillar. ",
-    " A través de mi propia historia, entendí que la verdadera seguridad no nace de quedarnos en lo conocido, sino de atrevernos a cruzar la incomodidad para habitar nuestra libertad. ",
-    " Pongo mi intuición, mi empatía y mis herramientas a tu servicio para guiarte en el viaje más importante de tu vida: el regreso a ti. ",
-    "Mi compromiso en Nóstos y en mis sesiones privadas es ofrecerte un espacio seguro, lúcido y sin juicios donde descodificar tus bloqueos, sanar lealtades del pasado y activar el propósito original de tu alma.",
-    "Desde 2006 he dedicado mi vida a investigar el diálogo entre el cuerpo biológico y el campo cuántico. Mi formación integra el rigor de la Kinesiología Holística, el Quiromasaje, la Terapia Transpersonal (500h en la Escuela Española de Desarrollo Transpersonal) y la Terapia de Respuesta Espiritual (T.R.E).",
+    " Hola, soy Isabel ",
+    " Mi formación y experiencia en terapias holísticas integra diversas disciplinas, como la Kinesiología, la Terapia Transpersonal, el trabajo con arquetipos, TRE, Quiromasaje y Numerología, entre otras. ",
+    " Desde niña, sentí la curiosidad de investigar el diálogo entre el cuerpo biológico y el campo cuántico. Esa búsqueda me llevó a comprender que la verdadera seguridad no nace de permanecer en lo conocido, sino de atreverse a cruzar la incomodidad para habitar nuestra libertad y evolucionar. ",
+    " Mi propósito es ayudarte a derribar esas estructuras rígidas y miedos obsoletos que hoy te impiden brillar. Pongo mi intuición, empatía y herramientas a tu servicio para acompañarte en el viaje más importante de tu vida: el regreso a ti. ",
+    "A través del Método Nóstos, te ofrezco un espacio seguro y de escucha activa. Juntos, descodificaremos tus bloqueos, soltaremos lealtades del pasado y activaremos el propósito original de tu alma.",
+    "¿Estás listo/a para dar el primer paso hacia tu transformación? ",
   ],
   buttonLabel: "Reservar Consulta con Isabel",
   buttonHref: "#contacto",

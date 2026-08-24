@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-container">
         <a href="#" className="brand-logo">
-          NÓSTOS <span>ISABEL MORENO</span>
+          MÉTODO NÓSTOS <span>ISABEL MORENO</span>
         </a>
         <ul className="nav-links">
           {navLinks.map((link) => (

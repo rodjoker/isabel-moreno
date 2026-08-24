@@ -58,6 +58,7 @@ h1, h2, h3, h4, .font-serif {
 p {
   margin-bottom: 1rem;
   color: var(--text-muted);
+  text-align: justify;
 }
 
 a {
@@ -201,6 +202,7 @@ a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .brand-logo span {
@@ -269,6 +271,30 @@ a {
   margin: 0 auto 2.5rem auto;
   font-weight: 300;
   line-height: 1.7;
+}
+
+.hero-story {
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hero-story h2 {
+  font-size: 1.7rem;
+  color: var(--text-main);
+  margin-bottom: 1.3rem;
+}
+
+.hero-story p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 1.3rem;
+}
+
+.hero-story .about-quote {
+  margin: 1.8rem 0;
 }
 
 .hero-buttons {
@@ -541,7 +567,9 @@ a {
 
 .group-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  max-width: 560px;
+  margin: 0 auto;
   gap: 2.5rem;
 }
 

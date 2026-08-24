@@ -1,7 +1,7 @@
 import { ContactLink } from "@/lib/types";
 
 export const whatsappHref = "https://wa.me/34630515551";
-export const emailHref = "mailto:isamoreno333@gmail.com";
+export const emailHref = "mailto:metodonostos@gmail.com";
 export const phoneHref = "tel:+34630515551";
 
 export const contactLinks: ContactLink[] = [
@@ -12,7 +12,7 @@ export const contactLinks: ContactLink[] = [
   },
   {
     icon: "fa-solid fa-envelope",
-    label: "isamoreno333@gmail.com",
+    label: "metodonostos@gmail.com",
     href: emailHref,
   },
   {

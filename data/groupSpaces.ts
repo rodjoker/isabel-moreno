@@ -5,7 +5,7 @@ export const groupSpaces: GroupSpace[] = [
     badge: "Monográficos Intensivos",
     title: "Talleres y Formaciones",
     description:
-      "Encuentros intensivos orientados a crisis vitales, transiciones, procesos de duelo, Neurográfica y reordenamiento del campo energético.",
+      "Encuentros intensivos orientados a crisis vitales, transiciones, procesos de duelo, acompañamiento y reordenamiento del campo energético.",
     features: [
       
     ],

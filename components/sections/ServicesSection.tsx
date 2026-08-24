@@ -8,11 +8,11 @@ export default function ServicesSection() {
     <section id="individuales" className="individual-section">
       <div className="container">
         <SectionHeader
-          badge="Especialidad de Isabel Moreno"
-          title="Sesiones Individuales & Consultas Privadas"
+          badge="MÉTODO NÓSTOS Isabel Moreno"
+          title="Sesiones Individuales & Bono de sesiones"
           subtitle={
             <>
-              Terapias personalizadas de alta precisión clínica y cuántica.
+              Terapias personalizadas.
               Disponibles en formato <strong>presencial (Guipuzcoa)</strong> y{" "}
               <strong>online (Zoom / Skype)</strong>.
             </>

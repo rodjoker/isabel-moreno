@@ -12,8 +12,7 @@ export default function CtaSection() {
           <span className="gold-accent">comienza hoy</span>
         </h2>
         <p className="section-subtitle" style={{ marginBottom: "2rem" }}>
-          Ponte en contacto directo con Isabel para valorar tu caso y elegir la
-          sesión o programa que mejor se adapta a tu momento vital.
+          Escribeme para valorar tu caso.
         </p>
 
         <div className="cta-buttons-bar">

@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import IconTextItem from "@/components/ui/IconTextItem";
-import { heroStats } from "@/data/hero";
+import CheckList from "@/components/ui/CheckList";
+import { heroStats, heroPainPoints } from "@/data/hero";
 
 export default function Hero() {
   return (
@@ -16,13 +17,24 @@ export default function Hero() {
             <span className="gold-accent">Sana tu historia,</span> despierta tu
             propósito.
           </h1>
-          <p className="hero-desc">
-            Un espacio de terapia profunda{" "}
-            <strong>
-              y transformación para personas dispuestas a soltar el control,
-            </strong>{" "}
-            vencer el miedo al cambio y recordar quiénes son en realidad.
-          </p>
+          <div className="hero-story">
+            <h2>¿Te sientes así ahora mismo?</h2>
+            <CheckList items={heroPainPoints} defaultIcon="fa-solid fa-circle-check" />
+
+            <p>
+              <strong>No tienes que cargar con todo esto tú solo/a.</strong>{" "}
+              Cuando la mente se bloquea, el cuerpo y el alma guardan las
+              respuestas. A través del Método Nóstos, vamos directos a la raíz
+              para descodificar tu historia, soltar el pasado y devolverte tu
+              libertad. El viaje de regreso a tu origen.
+            </p>
+
+            <div className="about-quote">
+              &ldquo;Acompañándote en el regreso a tu esencia: Método
+              Nóstos&rdquo;.
+            </div>
+          </div>
+
           <div className="hero-buttons">
             <Button
               variant="gold"

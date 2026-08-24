@@ -13,7 +13,7 @@ export default function GroupSection() {
               Espacios de Trabajo <span className="gold-accent">Colectivo</span>
             </>
           }
-          subtitle="Espacios guiados de contención y transformación a través de la inteligencia del grupo."
+          subtitle="Espacios guiados de contención y transformación."
         />
         <div className="group-grid">
           {groupSpaces.map((group) => (
