@@ -3,9 +3,9 @@ import { NostosPillar } from "@/lib/types";
 export const nostosPillars: NostosPillar[] = [
   {
     step: "Fase 01 · Raíces",
-    title: "Sanar el Pasado",
+    title: "Integrar el Pasado",
     description:
-      "Desarmemos el caparazón y los patrones heredados de la infancia que te mantiene atrapado.",
+      "Desarmemos el caparazón y los patrones heredados de la infancia que te mantienen atrapado.",
     tag: "Liberación de Bloqueos",
   },
   {

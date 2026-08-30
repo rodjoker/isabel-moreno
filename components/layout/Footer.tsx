@@ -4,8 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-bottom">
           <div>
-            <strong>MÉTODO NÓSTOS · ISABEL MORENO</strong> — Terapeuta
-            Holística & Transpersonal.
+            <strong>MÉTODO NÓSTOS · ISABEL MORENO</strong>  Kinesiologa - Terapeuta Holistica.
           </div>
           <div>&copy; {new Date().getFullYear()} Todos los derechos reservados.</div>
         </div>

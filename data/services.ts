@@ -53,7 +53,7 @@ export const services: Service[] = [
     icon: "fa-solid fa-atom",
     title: "Estudio Numerológico, Calendario Maya & Regresiones",
     description:
-      "Cartografía multidimensional para descifrar el pacto evolutivo de tu alma y sanar memorias pasadas:",
+      "Cartografía multidimensional para descifrar el pacto evolutivo de tu alma y liberar memorias pasadas:",
     sublist: {
       title: "Herramientas de Diagnóstico Cuántico:",
       items: [
@@ -70,7 +70,7 @@ export const services: Service[] = [
         {
           icon: "fa-solid fa-infinity",
           label:
-            "Hipnosis Clínica Reparadora & Regresiones: Un viaje guiado para sanar el origen de bloqueos profundos y liberar cargas del pasado que te frenan hoy.",
+            "Hipnosis Clínica Reparadora & Regresiones: Un viaje guiado para disolver el origen de bloqueos profundos y liberar cargas del pasado que te frenan hoy.",
         },
       ],
     },
