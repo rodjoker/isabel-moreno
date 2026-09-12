@@ -12,7 +12,7 @@ export const nostosPillars: NostosPillar[] = [
     step: "Fase 02 · Presente",
     title: "Habitar tu Poder",
     description:
-      "Activamos tu autenticidad para que dejes de esconder tu luz por miedo a incomodar o a ser juzgada.",
+      "Activamos tu autenticidad para que dejes de esconder tu luz por miedo a incomodar, al juicio o al rechazo.",
     tag: "Empoderamiento y Realeza",
   },
   {

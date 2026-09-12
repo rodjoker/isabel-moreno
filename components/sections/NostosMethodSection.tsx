@@ -10,11 +10,7 @@ export default function NostosMethodSection() {
         <div className="nostos-box">
           <SectionHeader
             badge="Programa Premium de Acompañamiento Integral"
-            title={
-              <>
-                El Método <span className="gold-accent">Nóstos</span>
-              </>
-            }
+            title={<span className="gold-accent">El Método Nóstos</span>}
             subtitle="A través del método Nóstos te ayudo a entender y a transformar lo que te pasa. Nóstos es un método de acompañamiento, guía y transformación para sostener a personas en momentos de crisis (laborales, personales, familiares...)."
           />
 

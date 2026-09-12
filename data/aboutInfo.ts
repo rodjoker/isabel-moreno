@@ -13,10 +13,11 @@ export const aboutInfo: AboutInfo = {
   cvBadges: [
     { label: "Terapeuta Transpersonal" },
     { label: "K.E.P " },
-    { label: "T.R.E Niveles I-III" },
+    { label: "T.R.E" },
     { label: "Experta TAC & Neurográfica" },
     { label: "Mindfulness" },
-    { label: "Terapia Tensérgica" },
+    { label: "Numerología" },
+    { label: "Kinesioloía" },
   ],
   contentBadge: "Vocación y Maestría",
   contentTitle: "El cuerpo como templo y la conciencia como guía",

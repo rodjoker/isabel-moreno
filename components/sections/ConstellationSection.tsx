@@ -26,7 +26,7 @@ export default function ConstellationSection() {
           subtitle={
             <>
               Interactúa en 3D con el mapa arquetípico y energético. Arrastra
-              para orbitar, haz zoom y{" "}
+              para orbitar,{" "}
               <strong>haz clic en cualquier esfera dorada</strong> para
               revelar las herramientas con las que trabajo.
             </>

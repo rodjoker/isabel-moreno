@@ -8,9 +8,9 @@ export const services: Service[] = [
     description:
       "TESTAJE:",
     sublist: {
-      title: "Herramientas de Corrección Somática:",
+      title: "Herramientas:",
       items: [
-        { icon: "fa-solid fa-check", label: "Kinesiología Holística y Emocional (K.E.P): A través del testaje muscular, localizamos el origen exacto de tu bloqueo físico o emocional para ir directo a la raíz del problema." },
+        { icon: "fa-solid fa-check", label: "Kinesiología Holística y Emocional (K.E.P): A través del testaje, localizamos el origen exacto de tu bloqueo físico o emocional para ir directo a la raíz del problema." },
         { icon: "fa-solid fa-check", label: "Terapia de Respuesta Espiritual (T.R.E): Una técnica profunda para limpiar los programas subconscientes y liberar los bloqueos del alma que te impiden avanzar." },
       ],
     },
