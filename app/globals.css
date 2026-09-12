@@ -954,6 +954,12 @@ footer {
   align-items: center;
 }
 
+.footer-social-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
 .footer-social {
   display: inline-flex;
   align-items: center;
