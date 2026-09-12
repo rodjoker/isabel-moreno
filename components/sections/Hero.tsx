@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="hero-title">
             El regreso a tu centro:
             <br />
-            <span className="gold-accent">Sana tu historia,</span> despierta tu
+            <span className="gold-accent">Transforma tu historia,</span> despierta tu
             propósito.
           </h1>
           <div className="hero-story">

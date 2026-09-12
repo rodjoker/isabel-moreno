@@ -17,7 +17,7 @@ export const aboutInfo: AboutInfo = {
     { label: "Experta TAC & Neurográfica" },
     { label: "Mindfulness" },
     { label: "Numerología" },
-    { label: "Kinesioloía" },
+    { label: "Kinesiología" },
   ],
   contentBadge: "Vocación y Maestría",
   contentTitle: "El cuerpo como templo y la conciencia como guía",
